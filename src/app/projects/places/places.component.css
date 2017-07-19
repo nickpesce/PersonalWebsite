@@ -1,0 +1,12 @@
+#container {
+    height: 25rem;
+    position: relative;
+    background-repeat: false;
+    background-size: cover;
+    image-rendering: pixelated;
+    text-align: center;
+}
+
+canvas {
+    display: none;
+}

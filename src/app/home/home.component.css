@@ -1,0 +1,9 @@
+#chat {
+    height: 400px;
+    width: 350px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 50% !important;
+    z-index: 9999;
+}

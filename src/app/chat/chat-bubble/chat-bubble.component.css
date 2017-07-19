@@ -1,0 +1,48 @@
+#headshot {
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+}
+
+#parts {
+    display: block;
+    margin-left: 8em;
+}
+
+.chatbox {
+    display: inline-block;
+    font-size: 150%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+}
+
+.chatbox-left {
+    background-color: blue;
+    color: white;
+}
+
+.chatbox-right {
+    text-align: right;
+    background-color: #FFF;
+    color: black;
+}
+
+.chat-section {
+}
+
+.chat-section-left {
+}
+
+.chat-section-right {
+    text-align: right;
+}
+
+.action {
+    margin-left: 20px;
+}
+
+.loading {
+}
+

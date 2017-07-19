@@ -1,0 +1,13 @@
+#container {
+    background-color: magenta;
+    color: white;
+    height: 25rem;
+    box-shadow: 0 0 3rem 1rem white inset;
+    padding: 1.5rem;
+}
+
+#title {
+    color: purple;
+    font-weight: bold;
+    display: inline
+}

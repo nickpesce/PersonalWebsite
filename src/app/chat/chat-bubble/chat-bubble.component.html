@@ -1,0 +1,24 @@
+<img *ngIf="!message.sent" src="assets/softheon_headshot.jpg" id="headshot" class="rounded-circle" align="left" width=100>
+<div id="parts">
+    <div *ngFor="let part of message.parts" class="row chat-section" [ngClass]="{'chat-section-right': message.sent}">
+        <div class="col align-self-end">
+            <div [ngSwitch]="part.action">
+                <div *ngSwitchCase="null">
+                    <div class="chatbox align-middle" [ngClass]="{'chatbox-right': message.sent, 'chatbox-left': !message.sent}">{{part.text}}</div>
+                </div>  
+                <div *ngSwitchCase="'loading'" class="row chat-section chat-section-left">
+                        <div class="chatbox align-middle chatbox-left loading">{{typingText}}</div>
+                </div>
+                <div class="action" *ngSwitchCase="'route'">
+                    <a [routerLink]="part.data"><i class="ion-link"></i> {{part.text}}</a>
+                </div>
+                <div class="action" *ngSwitchCase="'redirect'">
+                    <a href={{part.data}}><i class="ion-link"></i> {{part.text}}</a>
+                </div>
+                <div class="action" *ngSwitchCase="'download'">
+                    <a href="assets/{{part.data}}" download><i class="ion-android-download"></i> {{part.text}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

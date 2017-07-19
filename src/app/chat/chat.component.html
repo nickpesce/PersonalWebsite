@@ -1,0 +1,18 @@
+<div id="chat-container">
+    <div #messageContainer id="messages">
+        <div class="container-fluid">
+            <div *ngFor="let message of this.messaging.getMessages()">
+                <app-chat-bubble [message]="message"></app-chat-bubble>
+            </div>
+            <app-chat-bubble *ngIf="this.messaging.getMessages()[this.messaging.getMessages().length-1].sent" [message]="{'action': 'loading'}"></app-chat-bubble>
+        </div>
+    </div>
+    <form (ngSubmit)="sendMessage(f)" #f="ngForm" id="message-box" >
+        <div class="input-group" id="message-input">
+            <input type="text" name="message" class="form-control" autofocus ngModel>
+            <span class="input-group-btn">
+                <button class="btn btn-secondary"><i class="ion-android-send"></i></button>
+            </span>
+        </div>
+    </form>
+</div>

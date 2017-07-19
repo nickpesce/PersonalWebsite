@@ -1,0 +1,18 @@
+#container {
+    background-color: black;
+    color: white;
+    height: 25rem;
+    padding: 2rem;
+    animation: cycle 15s linear infinite;
+}
+
+@keyframes cycle {
+    0%, 100% { box-shadow: 0 0 3rem 1rem black inset; }
+    10% { box-shadow: 0 0 3rem 1rem red inset; }
+    25% { box-shadow: 0 0 3rem 1rem orange inset; }
+    40% { box-shadow: 0 0 3rem 1rem yellow inset; }
+    60% { box-shadow: 0 0 3rem 1rem green inset; }
+    70% { box-shadow: 0 0 3rem 1rem cyan inset; }
+    80% { box-shadow: 0 0 3rem 1rem blue inset; }
+    90% { box-shadow: 0 0 3rem 1rem indigo inset; }
+}
