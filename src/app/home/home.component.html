@@ -1,6 +1,11 @@
 <h1>NICK PESCE</h1>
 <div id="chat">
+  <div id="header" [ngClass]="{'bottom': !chatShown}" (click)="chatShown = true">
+    Nick Pesce <span id="minimize" (click)="chatShown=false;$event.stopPropagation()" *ngIf="chatShown">X </span>
+  </div>
+  <div id="chatmessages" *ngIf="chatShown">
     <app-chat></app-chat>
+  </div>
 </div>
 <app-bio></app-bio>
 <app-projects></app-projects>

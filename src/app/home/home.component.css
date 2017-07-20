@@ -1,4 +1,4 @@
-#chat {
+#chatmessages {
     height: 400px;
     width: 350px;
     position: fixed;
@@ -6,4 +6,22 @@
     bottom: 0;
     font-size: 50% !important;
     z-index: 9999;
+}
+
+.bottom {
+  bottom: 0 !important;
+}
+
+#header {
+  position: fixed;
+  right: 0;
+  bottom: 400px;
+  z-index: 9999;
+  width: 350px;
+  background-color: #3377FF;
+}
+
+#minimize{
+  float: right;
+  cursor: pointer;
 }
