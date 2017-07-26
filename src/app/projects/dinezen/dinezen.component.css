@@ -1,4 +1,24 @@
 #container {
     background-color: #AA0000;
     height: 25rem;
+    color: gold;
+    font-weight: bold;
+    padding: 1rem;
+    background-image:   
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('/assets/dinezen-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 7rem 2rem rgba(0, 0, 0, 200) inset;
+}
+
+span {
+    background-color: #990000;
+}
+
+#logo {
+    height: 10rem;
+    display: block;
 }

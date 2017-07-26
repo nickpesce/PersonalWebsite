@@ -1,9 +1,25 @@
 #container {
+    position: relative;
     background-color: magenta;
     color: white;
     height: 25rem;
     box-shadow: 0 0 3rem 1rem white inset;
     padding: 1.5rem;
+}
+
+#lollipops {
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lollipop {
+    height: 100%;
+    margin: auto;
 }
 
 #title {
